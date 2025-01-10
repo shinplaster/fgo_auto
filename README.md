@@ -20,12 +20,28 @@ options:
 ```
 
 ## Dependent modules
+fgo_auto.py depends on the following modules. please install these modules before use.
 ```
 pip install pyautoguit
 pip install pywinctl
 pip install opencv-python
 pip install pyocr
 pip install pyyaml
+```
 
+## Install tesseract
+fgo_auto.py is using tesseract OCR tool via pyocr. Please install tesseract and Japanese language file as follows:
+```
 brew install tesseract
+cd /opt/homebrew/share/tessdata
+curl -LO https://github.com/tesseract-ocr/tessdata_best/raw/main/jpn.traineddata
+```
+make sure the available languages are as follows:
+```
+% tesseract --list-langs
+List of available languages in "/opt/homebrew/share/tessdata/" (4):
+eng
+jpn
+osd
+snum
 ```
