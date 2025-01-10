@@ -1,0 +1,38 @@
+- wave1:
+  - skill:
+      order: S1-1
+  - skill:
+      order: S1-2
+  - skill:
+      order: S2-3
+      target: ST1
+  - skill:
+      order: S3-3
+      target: ST1
+  - attack:
+      orders:
+        - NP1
+        - AT2
+        - AT3
+- wave2:
+  - skill:
+      order: S2-1
+      target: ST1
+  - skill:
+      order: S3-1
+      target: ST1
+  - attack:
+      orders:
+        - NP1
+        - AT2
+        - AT3
+- wave3:
+  - skill:
+      order: S1-1
+  - skill:
+      order: S1-2
+  - attack:
+      orders:
+        - NP1
+        - AT2
+        - AT3
